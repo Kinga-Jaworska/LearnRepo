@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h2>Accessibilty</h2>
+
+<h3>Forms</h3>
+<label for="username">Username</label>
+<input id="username" type="text" name="username">
+
+<p>fieldset, legend, label, select</p>
+<fieldset>
+    <legend>Your date of birth</legend>
+    <label for="dobDay">Day</label>
+    <select id="dobDay">…</select>
+    <label for="dobMonth">Month</label>
+    <select id="dobMonth">…</select>
+    <label for="dobYear">Year</label>
+    <input id="dobYear" type="text" placeholder="YYYY">
+  </fieldset>
+
+<legend></legend>
+
+<h3>Alt for images</h3>
+<img alt="Describe picture content"/>
+
+<h3>Using Mark-up headings to make convey meaning and structure</h3>
+<h4>Lists</h4>
+
+<ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+</ul>
+
+<h4>Headings: </h4>
+<h1>H1</h1> <h2>H2</h2> <h3>H3</h3>
+
+<p>HTML 5 => gives nav and aside mark up</p>
+
+<p>Also section article time and aside</p>
+
+<h3>Provide WAI-ARIA roles</h3>
+<p>role="search" to describe functionality</p>
+
+<h3>Help users avoid and correct mistakes</h3>
+<p>Patterns, types, examples</p>
+
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="tel"
+       pattern="^(\(?0[1-9]{1}\)?)?[0-9 -]*$"
+       aria-describedby="phone-desc">
+<p id="phone-desc">For example, (02) 1234 1234</p>
+
+<h3>Code order should matches the logical order</h3>
+
+<h3>Responsiveness</h3>
+<p>Media query</p>
+
+<h3>Meaning for non-standard interactive elements</h3>
+<p>By aria-labels eg. for accordions and custom made buttons, collapsing content, widget responds to keyboard events etc.</p>
+<nav aria-label="Main Navigation" role="navigation">
+    <ul>
+      <li><a href="...">Home</a></li>
+      <li><a href="...">Shop</a></li>
+      <li class="has-submenu">
+        <a aria-expanded="false" aria-haspopup="true" href="...">SpaceBears</a>
+        <ul>
+            <li><a href="...">SpaceBear 6</a></li>
+            <li><a href="...">SpaceBear 6 Plus</a></li>
+        </ul>
+      </li>
+      <li><a href="...">MarsCars</a></li>
+      <li><a href="...">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h3>All interactive elements should have keyboard accessible</h3>
+  <p>for menus, moseover information, collapsable accordions, media players</p>
+  <p>tabindex="0" - adding an element that does not normally receive focus such as div or span</p>
+  <p> For example for accordion we need to tell assistive technologies that button is closed. This is done with aria-expanded="false"
+</p>
+
+  <h3>Avoiding captcha</h3>
+  <p>If we need use it it should</p>
+  <ul>
+    <li>Provides more then 2 ways solving captcha</li>
+    <li>providing access to human representative who can bypass captcha</li>
+    <li>Not requiring CAPTCHAs for authorized users.</li>
+  </ul>
+
+  <h3>Contrast ratio & color meaning</h3>
+  <p>
+    A white text on a white background has a contrast ratio of 1. This is impossible to perceive. Black text on a white background has a contrast ratio of 21.
+    There is no perfect ratio. It is not always as high as possible, even though a high contrast is usually more readable than a low contrast. According to Apple, we should strive for a minimum of 4.5, although 7 is preferred. 
+  </p>
+
+  <h3>Link states</h3>
+  <p>hover, active, pressed</p>
+
+  <h3>Disabilities</h3>
+  People with disabilities use technology in a variety of ways. Here are some examples:
+<ul>
+   <li>People with hand tremors cannot grip a mouse. They use the keyboard to navigate.</li> 
+    <li>People with mobility disabilities use their voice to control the computer or mobile device.</li>
+    <li>People with mobility disabilities use eye tracking to move the screen cursor.</li>
+    <li>People with mobility disabilities use switch devices to operate the computer or mobile device.</li>
+    <li>People who are blind use screen readers, braille displays or speech recognition software.</li>
+    <li>People with low vision use screen magnification.</li>
+</ul>
+
+<h3>Using outline for focus</h3>
+<h3>Using autocompletes</h3>
+
+</body>
+</html>
