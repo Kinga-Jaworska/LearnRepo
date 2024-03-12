@@ -2,7 +2,7 @@
 
 https://www.youtube.com/watch?v=QSIXYMIJkQg
 
-1. ReactNode vs JSX Element
+1. ReactNode vs JSX Element - React what react (so undefined, null etc.) can render JSX can render (not string, not number, not undefined)
 2. beforeEach | afterEach - using mock = mockSomething() (removing each time so no before/each)
 3. type TODO = any (alias for any to know what replace)
 4. Type param async function retry<T> fn: () => Promise<T>
