@@ -61,3 +61,50 @@ COURSE: https://auth.udacity.com/sign-up?next=https://www.udacity.com/course/web
    - b) CAPTCHA is easy to use for people with disabilities.
    - c) CAPTCHA creates problems for many people and has alternatives.
    - d) CAPTCHA is necessary for compliance with WCAG requirements.
+
+### Accessibility Article:
+
+https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/
+
+#### :focus
+
+where in document we are, removing outline is bad idea
+
+:focus-within - styling of parent of focused element
+:focus-visible - not show focus when interact with mouse pointer
+
+#### autocomplete
+
+#### link without text
+
+link wrapping svg element and should be added aria-hidden
+![Alt text](image.png)
+
+links - navigate
+any other -> buttons
+
+#### Disabled buttons
+
+disabled buttons doesnt allow to complete form so
+it doesnt work on focus
+we should have message about what is wrong
+and better approach is change disabled to aria-disabled
+to allows to click on button and trigger again message
+
+#### Close buttons
+
+![Alt text](image-1.png)
+
+#### Checkboxes & RadioButtons
+
+When hiding an interactive element, we need to make sure we choose a hiding technique that keeps it screen reader-accessible, position it on top of whatever is visually replacing it, so that a user navigating by touch can find it where they expect to, and then make it transparent.
+
+#### Overlays and pop-ups
+
+https://quentin-bellanger.com/blog/accessible-cookies-banner/
+
+#### Current page navigation
+
+aria-current, not only color but also we can use image
+
+#### Dark mode
