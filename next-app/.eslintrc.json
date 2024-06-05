@@ -1,3 +1,12 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "plugins": ["unused-imports"],
+  "rules": {
+    "import/order": ["warn"],
+    "react/display-name": "warn",
+    "unused-imports/no-unused-imports": "warn",
+    "no-unused-vars": "warn",
+    "no-console": "warn",
+    "eqeqeq": "warn"
+  }
 }
